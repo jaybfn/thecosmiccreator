@@ -1303,6 +1303,36 @@ em {
   color: var(--muted);
 }
 
+.case__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-top: var(--space-sm);
+}
+
+.testimonial__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--sand);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.testimonial__link {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--earth);
+  border-bottom: 1px solid currentColor;
+}
+
 @media (min-width: 980px) {
   .case {
     grid-template-columns: 1.1fr 0.9fr;
