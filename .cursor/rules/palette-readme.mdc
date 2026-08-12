@@ -1,0 +1,14 @@
+---
+description: Keep README color palette in sync with CSS theme tokens
+globs: css/styles.css
+alwaysApply: false
+---
+
+# Palette documentation sync
+
+When you change any color tokens in `css/styles.css` (`:root` variables such as `--earth`, `--sand`, `--almond`, `--moss`, `--sage`, `--ink`, `--paper`, `--accent`, `--dark`, etc.):
+
+1. Update the **Color palette** tables in `README.md` in the same change.
+2. Keep hex values, CSS variable names, and usage roles accurate.
+3. If a new palette token is added or removed, reflect that in the README tables.
+4. Do not leave README palette docs stale after a theme change.

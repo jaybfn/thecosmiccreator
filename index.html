@@ -7,16 +7,13 @@
       name="description"
       content="The Cosmic Creator Co. — studio-quality content that turns your expertise into leads, trust, and clients. Done for you, every month."
     />
-    <meta name="theme-color" content="#0b0b0b" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0b0b'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-size='22' font-weight='700' fill='%23ffffff'%3ETC%3C/text%3E%3C/svg%3E"
-    />
+    <meta name="theme-color" content="#eaded0" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
     <title>The Cosmic Creator Co. — Content That Gets You Clients</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -24,28 +21,48 @@
   <body>
     <div class="loader" id="loader" aria-hidden="true">
       <div class="loader__inner">
-        <span class="loader__brand">The Cosmic Creator Co.</span>
+        <img
+          class="loader__brand"
+          src="assets/logo-wordmark.png"
+          alt="The Cosmic Creator Co."
+          width="280"
+          height="128"
+        />
         <div class="loader__bar"><span class="loader__progress"></span></div>
       </div>
     </div>
 
     <header class="nav" id="nav">
-      <a class="nav__logo" href="#top" aria-label="The Cosmic Creator Co. home"
-        >The Cosmic Creator Co.</a
-      >
+      <a class="nav__logo" href="#top" aria-label="The Cosmic Creator Co. home">
+        <img
+          class="nav__mark"
+          src="assets/logo-mark.png"
+          alt=""
+          width="36"
+          height="36"
+        />
+        <img
+          class="nav__wordmark"
+          src="assets/logo-wordmark.png"
+          alt="The Cosmic Creator Co."
+          width="160"
+          height="74"
+        />
+      </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="#work">Work</a>
         <a href="#services">Services</a>
         <a href="#process">Process</a>
         <a href="#pricing">Pricing</a>
         <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
       <a
         class="nav__cta btn btn--nav"
         href="https://cal.com/thecosmiccreator"
         target="_blank"
         rel="noopener noreferrer"
-        >Book Free Call</a
+        >Let’s talk</a
       >
       <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span>
@@ -71,31 +88,25 @@
     <main id="top">
       <!-- 1. HERO -->
       <section class="hero" data-section="hero">
-        <div class="hero__stage">
-          <div class="hero__visual">
-            <img
-              class="hero__image"
-              src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=2200&q=80"
-              alt="Professional video crew filming studio-quality content"
-              width="2200"
-              height="1467"
-              fetchpriority="high"
-            />
-          </div>
+        <div class="hero__atmosphere" aria-hidden="true"></div>
+        <p class="hero__vert" aria-hidden="true">Est. 2024 · Bangalore</p>
+        <div class="hero__grid">
           <div class="hero__content">
-            <p class="hero__brand reveal">The Cosmic Creator Co.</p>
+            <p class="hero__kicker reveal">
+              <span class="hero__kicker-mark" aria-hidden="true"></span>
+              Content that gets you clients
+            </p>
             <h1 class="hero__title">
               <span class="line"><span class="line__inner">Your business</span></span>
               <span class="line"><span class="line__inner">deserves to be</span></span>
-              <span class="line"
-                ><span class="line__inner"
-                  ><em class="accent-ital">seen. Heard.</em></span
-                ></span
-              >
-              <span class="line"
-                ><span class="line__inner"><em class="accent-ital">Chosen.</em></span></span
-              >
+              <span class="line"><span class="line__inner"><em>seen. Heard.</em></span></span>
+              <span class="line"><span class="line__inner"><em>Chosen.</em></span></span>
             </h1>
+            <p class="hero__intro reveal">
+              <span class="hero__intro-label">We are</span>
+              <span class="hero__intro-name">The Cosmic Creator Co.</span>
+              <span class="hero__intro-role">A creative studio for founders who want to be unforgettable</span>
+            </p>
             <p class="hero__sub reveal">
               You’re good at what you do. The problem is — nobody knows it. We fix that.
               Studio-quality content, posted consistently, that turns your expertise into leads,
@@ -107,27 +118,83 @@
                 class="btn btn--primary"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Book Free Strategy Call</a
+                >Book free strategy call</a
               >
-              <a href="#work" class="btn btn--ghost btn--ghost-light">See What’s Possible</a>
+              <a href="#work" class="text-link text-link--hero">View selected work</a>
             </div>
+          </div>
+          <div class="hero__visual reveal">
+            <div class="floaties" aria-hidden="true">
+              <img class="floaty floaty--a" src="assets/illus-reel.webp" alt="" width="96" height="96" />
+              <img class="floaty floaty--b" src="assets/illus-clapper.webp" alt="" width="88" height="88" />
+              <img class="floaty floaty--c" src="assets/illus-growth.webp" alt="" width="84" height="84" />
+              <span class="spark spark--1"></span>
+              <span class="spark spark--2"></span>
+              <span class="spark spark--3"></span>
+            </div>
+            <figure class="hero__portrait">
+              <img
+                class="hero__image"
+                src="assets/founder-hero.jpg"
+                alt="The founders of The Cosmic Creator Co."
+                width="681"
+                height="851"
+                fetchpriority="high"
+              />
+              <figcaption class="hero__frame-label">The founders</figcaption>
+            </figure>
+            <p class="hero__caption">Strategy · Production · Growth</p>
           </div>
         </div>
       </section>
 
-      <!-- 2. CREDIBILITY -->
+      <!-- 2. CREDIBILITY + animated creative strip -->
       <section class="credibility" data-section="credibility">
         <p class="credibility__label reveal">What our clients get</p>
-        <div class="credibility__logos reveal credibility__outcomes">
-          <span>Reels that work</span>
-          <span>More visibility</span>
-          <span>Inbound leads</span>
-          <span>Authority</span>
+        <div class="cred-cards reveal">
+          <article class="cred-card">
+            <img src="assets/illus-reel.webp" alt="" width="72" height="72" loading="lazy" />
+            <h3>Reels that work</h3>
+            <p>Studio quality, every month</p>
+          </article>
+          <article class="cred-card">
+            <img src="assets/illus-megaphone.webp" alt="" width="72" height="72" loading="lazy" />
+            <h3>More visibility</h3>
+            <p>Right people, right time</p>
+          </article>
+          <article class="cred-card">
+            <img src="assets/illus-growth.webp" alt="" width="72" height="72" loading="lazy" />
+            <h3>Inbound leads</h3>
+            <p>DMs from people ready to buy</p>
+          </article>
+          <article class="cred-card">
+            <img src="assets/illus-clapper.webp" alt="" width="72" height="72" loading="lazy" />
+            <h3>Authority</h3>
+            <p>Known as the go-to in your field</p>
+          </article>
         </div>
         <p class="credibility__marquee-label reveal" aria-hidden="true">
           Reel Production · Instagram & Facebook · Content Strategy · Creative Direction · Social
           Media Management · Personal Branding · Lead Generation · Growth Tracking
         </p>
+      </section>
+
+      <!-- Animated creative showcase -->
+      <section class="creative-band" aria-label="Creative energy">
+        <div class="creative-band__track" aria-hidden="true">
+          <div class="creative-band__item"><img src="assets/illus-reel.webp" alt="" /><span>Hook</span></div>
+          <div class="creative-band__item"><img src="assets/illus-megaphone.webp" alt="" /><span>Reach</span></div>
+          <div class="creative-band__item"><img src="assets/illus-growth.webp" alt="" /><span>Leads</span></div>
+          <div class="creative-band__item"><img src="assets/illus-clapper.webp" alt="" /><span>Shoot</span></div>
+          <div class="creative-band__item"><img src="assets/illus-reel.webp" alt="" /><span>Edit</span></div>
+          <div class="creative-band__item"><img src="assets/illus-megaphone.webp" alt="" /><span>Post</span></div>
+          <div class="creative-band__item"><img src="assets/illus-growth.webp" alt="" /><span>Grow</span></div>
+          <div class="creative-band__item"><img src="assets/illus-clapper.webp" alt="" /><span>Repeat</span></div>
+          <div class="creative-band__item"><img src="assets/illus-reel.webp" alt="" /><span>Hook</span></div>
+          <div class="creative-band__item"><img src="assets/illus-megaphone.webp" alt="" /><span>Reach</span></div>
+          <div class="creative-band__item"><img src="assets/illus-growth.webp" alt="" /><span>Leads</span></div>
+          <div class="creative-band__item"><img src="assets/illus-clapper.webp" alt="" /><span>Shoot</span></div>
+        </div>
       </section>
 
       <!-- 3. PROBLEM -->
@@ -298,6 +365,9 @@
         <div class="services__list">
           <article class="service reveal">
             <span class="service__num">01</span>
+            <div class="service__icon" aria-hidden="true">
+              <img src="assets/illus-reel.webp" alt="" width="64" height="64" loading="lazy" />
+            </div>
             <div class="service__content">
               <h3>Content Production</h3>
               <p>
@@ -309,6 +379,9 @@
           </article>
           <article class="service reveal">
             <span class="service__num">02</span>
+            <div class="service__icon" aria-hidden="true">
+              <img src="assets/illus-megaphone.webp" alt="" width="64" height="64" loading="lazy" />
+            </div>
             <div class="service__content">
               <h3>Social Media Management</h3>
               <p>
@@ -320,6 +393,9 @@
           </article>
           <article class="service reveal">
             <span class="service__num">03</span>
+            <div class="service__icon" aria-hidden="true">
+              <img src="assets/illus-growth.webp" alt="" width="64" height="64" loading="lazy" />
+            </div>
             <div class="service__content">
               <h3>Brand Strategy</h3>
               <p>
@@ -614,10 +690,10 @@
           </div>
           <div class="about__visual reveal">
             <img
-              src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80"
-              alt="Creator filming cinematic content on set"
-              width="1200"
-              height="1500"
+              src="assets/founder-hero.jpg"
+              alt="The founders of The Cosmic Creator Co."
+              width="681"
+              height="851"
               loading="lazy"
             />
           </div>
@@ -707,6 +783,14 @@
 
       <!-- 11. FINAL CTA -->
       <section class="final-cta" id="contact" data-section="cta">
+        <img
+          class="final-cta__mascot"
+          src="assets/illus-clapper.webp"
+          alt=""
+          width="110"
+          height="110"
+          aria-hidden="true"
+        />
         <p class="eyebrow reveal">No commitment. Just clarity.</p>
         <h2 class="final-cta__title">
           <span class="line"><span class="line__inner">30 minutes. We’ll show you</span></span>
@@ -742,7 +826,14 @@
     <footer class="footer">
       <div class="footer__top">
         <div>
-          <a class="footer__logo" href="#top">The Cosmic Creator Co.</a>
+          <a class="footer__logo" href="#top" aria-label="The Cosmic Creator Co. home">
+            <img
+              src="assets/logo-wordmark-light.png"
+              alt="The Cosmic Creator Co."
+              width="200"
+              height="92"
+            />
+          </a>
           <p class="footer__blurb">
             Helps founders across India build authority and generate leads through strategy-led
             content — done for you, every month, without lifting a finger.

@@ -86,12 +86,9 @@
       a.addEventListener("click", closeMobile);
     });
 
-    const hero = document.querySelector(".hero");
-
     const syncNav = (scrollY) => {
-      const overHero = hero ? scrollY < hero.offsetHeight - 80 : false;
-      nav?.classList.toggle("is-over-hero", overHero);
-      nav?.classList.toggle("is-scrolled", scrollY > 24 && !overHero);
+      nav?.classList.toggle("is-scrolled", scrollY > 24);
+      nav?.classList.remove("is-over-hero");
     };
 
     if (lenis) lenis.on("scroll", ({ scroll }) => syncNav(scroll));
@@ -111,27 +108,29 @@
 
     tl.to(titleLines, {
       y: 0,
-      duration: 1.1,
-      stagger: 0.12,
+      duration: 1.25,
+      stagger: 0.1,
+      ease: "power3.out",
     })
       .to(
         reveals,
         {
           opacity: 1,
           y: 0,
-          duration: 0.9,
-          stagger: 0.1,
+          duration: 1,
+          stagger: 0.08,
+          ease: "power2.out",
         },
-        "-=0.55"
+        "-=0.7"
       )
       .to(
         image,
         {
           scale: 1,
-          duration: 1.6,
+          duration: 1.8,
           ease: "power2.out",
         },
-        "-=1.2"
+        "-=1.35"
       );
   };
 
