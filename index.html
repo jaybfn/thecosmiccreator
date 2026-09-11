@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Italiana&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -42,16 +42,24 @@
       <symbol id="i-arrow" viewBox="0 0 24 24">
         <path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" />
       </symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24">
+        <path
+          d="M12 3C6.5 3 2 6.6 2 11c0 2.4 1.2 4.6 3.2 6.1-.6 1.6-1.8 2.9-1.9 3 .4.5 1 .7 1.5.5 2.4-.8 4-1.9 4.8-2.5.8.1 1.6.2 2.4.2 5.5 0 10-3.6 10-8S17.5 3 12 3z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+        />
+      </symbol>
     </svg>
 
     <div class="loader" id="loader" aria-hidden="true">
       <div class="loader__inner">
         <img
           class="loader__brand"
-          src="assets/logo-wordmark.png"
+          src="assets/logo-wordmark-bold.png"
           alt=""
-          width="280"
-          height="140"
+          width="704"
+          height="320"
         />
         <div class="loader__bar"><span class="loader__progress"></span></div>
       </div>
@@ -59,35 +67,23 @@
 
     <!-- ===== NAV ===== -->
     <header class="nav" id="nav">
+      <span class="nav__spacer" aria-hidden="true"></span>
       <a class="nav__logo" href="#top" aria-label="The Cosmic Creator Co. — home">
-        <img src="assets/logo-wordmark.png" alt="The Cosmic Creator Co." width="200" height="100" />
+        <img src="assets/logo-wordmark-bold.png" alt="The Cosmic Creator Co." width="704" height="320" />
       </a>
-      <nav class="nav__links" aria-label="Primary">
-        <a href="#work">Our Work</a>
-        <a href="#capabilities">What We Do</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a
-        class="nav__cta btn"
-        href="https://cal.com/thecosmiccreator"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Start a project</a
-      >
       <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
         <span></span><span></span>
       </button>
     </header>
 
     <div class="mobile-nav" id="mobileNav">
-      <a href="#work">Our Work</a>
-      <a href="#capabilities">What We Do</a>
+      <a href="#top">Home</a>
+      <a href="#work">Work</a>
+      <a href="#capabilities">Service</a>
+      <a href="retainers.html">Pricing</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
-      <a href="https://cal.com/thecosmiccreator" target="_blank" rel="noopener noreferrer"
-        >Start a project</a
-      >
+      <a href="https://cal.com/thecosmiccreator" target="_blank" rel="noopener noreferrer">Start a project</a>
     </div>
 
     <main id="main">
@@ -137,7 +133,7 @@
       </section>
 
       <!-- ===== 2 · POSITIONING ===== -->
-      <section class="section section--tight">
+      <section class="section section--tight page-box">
         <div class="shell">
           <div class="head">
             <h2 class="h2">
@@ -150,241 +146,97 @@
             </p>
           </div>
 
-          <div class="pillars reveal">
-            <div class="pillar">
+          <div class="pillars">
+            <article class="pillar reveal">
+              <span class="pillar__num">01</span>
               <h3 class="pillar__name">
                 <svg class="star" aria-hidden="true"><use href="#i-star" /></svg>Brand
               </h3>
-              <p>Strategy · Positioning · Identity</p>
-            </div>
-            <div class="pillar">
+              <ul class="pillar__tags">
+                <li>Strategy</li>
+                <li>Positioning</li>
+                <li>Identity</li>
+              </ul>
+            </article>
+            <article class="pillar reveal">
+              <span class="pillar__num">02</span>
               <h3 class="pillar__name">
                 <svg class="star" aria-hidden="true"><use href="#i-star" /></svg>Content
               </h3>
-              <p>Reels · Photography · Video · Campaigns</p>
-            </div>
-            <div class="pillar">
+              <ul class="pillar__tags">
+                <li>Reels</li>
+                <li>Photography</li>
+                <li>Video</li>
+                <li>Campaigns</li>
+              </ul>
+            </article>
+            <article class="pillar reveal">
+              <span class="pillar__num">03</span>
               <h3 class="pillar__name">
                 <svg class="star" aria-hidden="true"><use href="#i-star" /></svg>Digital
               </h3>
-              <p>Websites · Landing Pages · Digital Experiences</p>
-            </div>
-            <div class="pillar">
+              <ul class="pillar__tags">
+                <li>Websites</li>
+                <li>Landing Pages</li>
+                <li>Digital Experiences</li>
+              </ul>
+            </article>
+            <article class="pillar reveal">
+              <span class="pillar__num">04</span>
               <h3 class="pillar__name">
                 <svg class="star" aria-hidden="true"><use href="#i-star" /></svg>Social
               </h3>
-              <p>Instagram · Facebook · Strategy · Management</p>
-            </div>
+              <ul class="pillar__tags">
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Strategy</li>
+                <li>Management</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- ===== 3 · SELECTED WORK ===== -->
-      <section class="section" id="work">
-        <div class="shell">
-          <div class="head">
-            <div>
-              <p class="eyebrow">Selected work</p>
-              <h2 class="h2">Work we’re<br /><em class="accent-ital">proud of.</em></h2>
-            </div>
-            <p class="lead head__lead">
-              Three brands, three very different problems. In each one we started with the business
-              before we started with the design.
-            </p>
-          </div>
-
-          <div class="work__list">
-            <!-- Project 01 -->
-            <article class="project reveal">
-              <a class="project__media" href="work/pharma-force-india.html" tabindex="-1" aria-hidden="true">
-                <span class="project__index">01</span>
-                <img
-                  src="assets/case-pharma.jpg"
-                  alt=""
-                  width="1600"
-                  height="1066"
-                  loading="lazy"
-                />
-              </a>
-              <div class="project__body">
-                <span class="project__cat">Healthcare &amp; pharma · Bengaluru</span>
-                <h3 class="project__title">
-                  <a href="work/pharma-force-india.html">Pharma Force India</a>
-                </h3>
-                <p class="project__desc">
-                  A Karnataka-wide distributor of WHO-GMP medicines with no digital presence to match
-                  the trust their buyers needed. We built one — for pharmacies, hospitals and
-                  households at the same time.
-                </p>
-                <ul class="project__services">
-                  <li>Brand Positioning</li>
-                  <li>Messaging</li>
-                  <li>Website</li>
-                  <li>Content</li>
-                </ul>
-                <a class="tlink" href="work/pharma-force-india.html"
-                  >Read the case study
-                  <svg class="star arrow" width="14" height="14" aria-hidden="true"><use href="#i-arrow" /></svg
-                ></a>
-              </div>
-            </article>
-
-            <!-- Project 02 -->
-            <article class="project project--flip project--tall reveal">
-              <a class="project__media" href="work/sarmi-jewels.html" tabindex="-1" aria-hidden="true">
-                <span class="project__index">02</span>
-                <img src="assets/case-sarmi.jpg" alt="" width="1600" height="1066" loading="lazy" />
-              </a>
-              <div class="project__body">
-                <span class="project__cat">D2C jewellery · Pan-India</span>
-                <h3 class="project__title"><a href="work/sarmi-jewels.html">Sarmi Jewels</a></h3>
-                <p class="project__desc">
-                  925 sterling silver for everyday wear. The jewellery was refined; the brand around
-                  it wasn’t yet. We gave it a voice, a look and a place to be discovered.
-                </p>
-                <ul class="project__services">
-                  <li>Brand Identity</li>
-                  <li>Ecommerce Storytelling</li>
-                  <li>Social</li>
-                  <li>Content</li>
-                </ul>
-                <a class="tlink" href="work/sarmi-jewels.html"
-                  >Read the case study
-                  <svg class="star arrow" width="14" height="14" aria-hidden="true"><use href="#i-arrow" /></svg
-                ></a>
-              </div>
-            </article>
-
-            <!-- Project 03 -->
-            <article class="project reveal">
-              <a class="project__media" href="work/laptech.html" tabindex="-1" aria-hidden="true">
-                <span class="project__index">03</span>
-                <img
-                  src="assets/case-laptech.jpg?v=2"
-                  alt=""
-                  width="1365"
-                  height="1024"
-                  loading="lazy"
-                />
-              </a>
-              <div class="project__body">
-                <span class="project__cat">IT infrastructure · Bengaluru</span>
-                <h3 class="project__title"><a href="work/laptech.html">LAPTECH</a></h3>
-                <p class="project__desc">
-                  Fifteen years of expertise reading like a scattered vendor list. We rebuilt the
-                  story around nine solution lines and turned it into one credible partner.
-                </p>
-                <ul class="project__services">
-                  <li>Brand Strategy</li>
-                  <li>Website</li>
-                  <li>Brochures</li>
-                  <li>Marketing Content</li>
-                </ul>
-                <a class="tlink" href="work/laptech.html"
-                  >Read the case study
-                  <svg class="star arrow" width="14" height="14" aria-hidden="true"><use href="#i-arrow" /></svg
-                ></a>
-              </div>
-            </article>
-          </div>
-
-          <p class="work__foot reveal">
-            <span>Healthcare · Jewellery &amp; D2C · IT infrastructure</span>
-            <a
-              class="tlink"
-              href="https://cal.com/thecosmiccreator"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Have a project in mind?
-              <svg class="star arrow" width="14" height="14" aria-hidden="true"><use href="#i-arrow" /></svg
-            ></a>
-          </p>
+      <!-- ===== SERVICE ===== -->
+      <section class="band-almond" id="capabilities">
+        <div class="banner">
+          <p class="outline banner__ghost" aria-hidden="true">Branding</p>
+          <h2 class="banner__title">Service</h2>
         </div>
-      </section>
 
-      <!-- ===== 4 · WHAT WE DO ===== -->
-      <section class="section band-almond" id="capabilities">
-        <div class="shell">
-          <div class="head">
-            <div>
-              <p class="eyebrow">What we do</p>
-              <h2 class="h2">Four things,<br />done properly.</h2>
+        <div class="offers">
+          <article class="offer reveal">
+            <div class="offer__visual">
+              <img src="assets/illus-growth.webp" alt="" width="400" height="400" loading="lazy" />
+              <span class="offer__num">01</span>
             </div>
-            <p class="lead head__lead">
-              Most brands don’t need fifty services. They need these four working together, in the
-              right order.
-            </p>
-          </div>
-
-          <div class="capabilities">
-            <article class="capability reveal">
-              <span class="capability__num">01</span>
-              <h3 class="capability__title">Brand</h3>
-              <div class="capability__copy">
-                <p>
-                  We work out who you are, what you stand for and how you should be seen — before
-                  anyone designs anything.
-                </p>
-                <ul class="capability__tags">
-                  <li>Strategy</li>
-                  <li>Positioning</li>
-                  <li>Brand Identity</li>
-                  <li>Messaging</li>
-                  <li>Brand Guidelines</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="capability reveal">
-              <span class="capability__num">02</span>
-              <h3 class="capability__title">Content</h3>
-              <div class="capability__copy">
-                <p>We turn the brand into content people actually want to watch.</p>
-                <ul class="capability__tags">
-                  <li>Reels</li>
-                  <li>Photography</li>
-                  <li>Video</li>
-                  <li>Campaigns</li>
-                  <li>Social Creatives</li>
-                  <li>Copy</li>
-                  <li>Content Strategy</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="capability reveal">
-              <span class="capability__num">03</span>
-              <h3 class="capability__title">Digital</h3>
-              <div class="capability__copy">
-                <p>
-                  We build the places people land — so the brand feels as good online as it does
-                  everywhere else.
-                </p>
-                <ul class="capability__tags">
-                  <li>Websites</li>
-                  <li>Landing Pages</li>
-                  <li>Ecommerce</li>
-                  <li>Digital Experiences</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="capability reveal">
-              <span class="capability__num">04</span>
-              <h3 class="capability__title">Social &amp; Marketing</h3>
-              <div class="capability__copy">
-                <p>We keep the brand visible, relevant and consistent — month after month.</p>
-                <ul class="capability__tags">
-                  <li>Instagram</li>
-                  <li>Facebook</li>
-                  <li>Social Management</li>
-                  <li>Content Marketing</li>
-                  <li>Digital Marketing</li>
-                  <li>Campaigns</li>
-                </ul>
-              </div>
-            </article>
-          </div>
+            <h3 class="offer__title">Brand</h3>
+            <p class="offer__desc">Strategy, positioning and identity — before anyone designs anything.</p>
+          </article>
+          <article class="offer reveal">
+            <div class="offer__visual">
+              <img src="assets/illus-reel.webp" alt="" width="400" height="400" loading="lazy" />
+              <span class="offer__num">02</span>
+            </div>
+            <h3 class="offer__title">Content</h3>
+            <p class="offer__desc">Reels, photography, video and campaigns people actually want to watch.</p>
+          </article>
+          <article class="offer reveal">
+            <div class="offer__visual">
+              <img src="assets/illus-clapper.webp" alt="" width="400" height="400" loading="lazy" />
+              <span class="offer__num">03</span>
+            </div>
+            <h3 class="offer__title">Digital</h3>
+            <p class="offer__desc">Websites, landing pages and experiences that feel as good as the brand.</p>
+          </article>
+          <article class="offer reveal">
+            <div class="offer__visual">
+              <img src="assets/illus-megaphone.webp" alt="" width="400" height="400" loading="lazy" />
+              <span class="offer__num">04</span>
+            </div>
+            <h3 class="offer__title">Social</h3>
+            <p class="offer__desc">Instagram, Facebook and keeping the brand visible, month after month.</p>
+          </article>
         </div>
       </section>
 
@@ -413,7 +265,7 @@
       </section>
 
       <!-- ===== 6 · HOW WE WORK ===== -->
-      <section class="section">
+      <section class="section page-box">
         <div class="shell">
           <div class="head head--solo">
             <div>
@@ -527,85 +379,85 @@
         </div>
       </section>
 
-      <!-- ===== 10 · FINAL CTA ===== -->
-      <section class="section band-noir" id="contact">
-        <div class="shell cta">
-          <h2 class="cta__title">
-            <span class="line"><span class="line__inner">Have a brand that</span></span>
-            <span class="line"><span class="line__inner">deserves more <em class="accent-ital">attention?</em></span></span>
-          </h2>
-          <p class="cta__sub reveal">
-            Tell us what you’re building. We’ll tell you honestly what it needs — and whether we’re
-            the right studio for it.
-          </p>
-          <div class="cta__actions reveal">
-            <a
-              class="btn"
-              href="https://cal.com/thecosmiccreator"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Start a project</a
-            >
-            <a
-              class="btn btn--ghost"
-              href="https://wa.me/919611145162"
-              target="_blank"
-              rel="noopener noreferrer"
-              >WhatsApp us</a
-            >
-          </div>
-          <p class="cta__direct reveal">
-            <a href="mailto:sales@thecosmiccreator.com">sales@thecosmiccreator.com</a>
-            <a href="tel:+919611145162">+91 96111 45162</a>
-            <span>Bangalore, India</span>
-          </p>
+      <!-- ===== PORTFOLIO ===== -->
+      <section class="folio-wrap" id="work">
+        <div class="banner">
+          <p class="outline banner__ghost" aria-hidden="true">My Work</p>
+          <h2 class="banner__title">Portfolio</h2>
         </div>
+
+        <div class="folio">
+          <a class="folio__item reveal" href="work/pharma-force-india.html">
+            <img src="assets/case-pharma.jpg" alt="" width="1600" height="1066" loading="lazy" />
+            <span class="folio__meta">
+              <span class="folio__cat">Healthcare &amp; pharma</span>
+              <span class="folio__name">Pharma Force India</span>
+            </span>
+          </a>
+          <a class="folio__item reveal" href="work/sarmi-jewels.html">
+            <img src="assets/case-sarmi.jpg" alt="" width="1600" height="1066" loading="lazy" />
+            <span class="folio__meta">
+              <span class="folio__cat">D2C jewellery</span>
+              <span class="folio__name">Sarmi Jewels</span>
+            </span>
+          </a>
+          <a class="folio__item reveal" href="work/laptech.html">
+            <img src="assets/case-laptech.jpg?v=2" alt="" width="1365" height="1024" loading="lazy" />
+            <span class="folio__meta">
+              <span class="folio__cat">IT infrastructure</span>
+              <span class="folio__name">LAPTECH</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="contact band-almond" id="contact">
+        <p class="kicker reveal">let’s talk</p>
+        <h2 class="contact__title">
+          Have a brand that<br />
+          deserves more <em class="accent-ital">attention?</em>
+        </h2>
+        <p class="contact__sub reveal">
+          Tell us what you’re building. We’ll tell you honestly what it needs — and whether we’re
+          the right studio for it.
+        </p>
+        <div class="contact__actions reveal">
+          <a
+            class="btn"
+            href="https://cal.com/thecosmiccreator"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="btn__icon" width="16" height="16" aria-hidden="true"><use href="#i-chat" /></svg>
+            Let’s talk
+          </a>
+          <a
+            class="btn btn--ghost"
+            href="https://wa.me/919611145162"
+            target="_blank"
+            rel="noopener noreferrer"
+            >WhatsApp us</a
+          >
+        </div>
+        <p class="contact__direct reveal">
+          <a href="mailto:sales@thecosmiccreator.com">sales@thecosmiccreator.com</a>
+          <a href="tel:+919611145162">+91 96111 45162</a>
+          <span>Bangalore, India</span>
+        </p>
       </section>
     </main>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
-      <div class="shell">
-        <div class="footer__top">
-          <div>
-            <a class="footer__logo" href="#top" aria-label="The Cosmic Creator Co. — home">
-              <img
-                src="assets/logo-wordmark-light.png"
-                alt="The Cosmic Creator Co."
-                width="200"
-                height="92"
-                loading="lazy"
-              />
-            </a>
-            <p class="footer__tag">Brand · Content · Digital · Social</p>
-          </div>
-          <div class="footer__links">
-            <div>
-              <h4>Studio</h4>
-              <a href="#work">Our Work</a>
-              <a href="#capabilities">What We Do</a>
-              <a href="#about">About</a>
-              <a href="retainers.html">Content Retainers</a>
-            </div>
-            <div>
-              <h4>Get in touch</h4>
-              <a href="mailto:sales@thecosmiccreator.com">Email</a>
-              <a href="https://wa.me/919611145162" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-              <a href="tel:+919611145162">+91 96111 45162</a>
-              <a href="https://cal.com/thecosmiccreator" target="_blank" rel="noopener noreferrer"
-                >Book a call</a
-              >
-              <!-- TODO: add Instagram + LinkedIn URLs when confirmed:
-              <a href="https://instagram.com/…" target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a href="https://linkedin.com/company/…" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              -->
-            </div>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <p>© 2026 The Cosmic Creator Co.</p>
-          <p><a href="privacy.html">Privacy Policy</a></p>
-        </div>
+      <div class="footer__bar">
+        <p>© 2026 The Cosmic Creator Co. / All rights reserved</p>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#work">Work</a>
+          <a href="#capabilities">Service</a>
+          <a href="retainers.html">Retainers</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </nav>
       </div>
     </footer>
 

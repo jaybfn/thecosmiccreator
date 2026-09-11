@@ -8,8 +8,7 @@
     3. Replace every "Project Name" / "example.com" / placeholder line below.
     4. Update the "Next project" link at the foot of this file, and the link
        into the previous project so the loop stays closed.
-    5. Add the project card to the .work__list block in index.html
-       (copy an existing <article class="project">; alternate .project--flip).
+    5. Add a `.folio__item` card to the portfolio grid in `index.html`.
 
   Rules: real outcomes only. No invented metrics, no invented testimonials.
 -->
@@ -50,26 +49,20 @@
     </svg>
 
     <header class="nav is-scrolled" id="nav">
+      <span class="nav__spacer" aria-hidden="true"></span>
       <a class="nav__logo" href="../index.html" aria-label="The Cosmic Creator Co. — home">
-        <img src="../assets/logo-wordmark.png" alt="The Cosmic Creator Co." width="200" height="100" />
+        <img src="../assets/logo-wordmark-bold.png" alt="The Cosmic Creator Co." width="704" height="320" />
       </a>
-      <nav class="nav__links" aria-label="Primary">
-        <a href="../index.html#work" class="is-current">Our Work</a>
-        <a href="../index.html#capabilities">What We Do</a>
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#contact">Contact</a>
-      </nav>
-      <a class="nav__cta btn" href="https://cal.com/thecosmiccreator" target="_blank" rel="noopener noreferrer"
-        >Start a project</a
-      >
       <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
         <span></span><span></span>
       </button>
     </header>
 
     <div class="mobile-nav" id="mobileNav">
-      <a href="../index.html#work">Our Work</a>
-      <a href="../index.html#capabilities">What We Do</a>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#capabilities">Service</a>
+      <a href="../retainers.html">Pricing</a>
       <a href="../index.html#about">About</a>
       <a href="../index.html#contact">Contact</a>
       <a href="https://cal.com/thecosmiccreator" target="_blank" rel="noopener noreferrer">Start a project</a>
