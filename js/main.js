@@ -137,7 +137,7 @@
   const setupParallax = () => {
     if (reduceMotion) return;
 
-    gsap.utils.toArray(".folio__item img, .project__media img, .case-cover img").forEach((img) => {
+    gsap.utils.toArray(".folio__frame img, .project__media img, .case-cover img").forEach((img) => {
       gsap.fromTo(
         img,
         { yPercent: -4 },
