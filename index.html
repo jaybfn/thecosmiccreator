@@ -1,935 +1,617 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cosmic Creator Co. — We build brands people remember</title>
     <meta
       name="description"
-      content="The Cosmic Creator Co. — studio-quality content that turns your expertise into leads, trust, and clients. Done for you, every month."
+      content="A creative studio in Bangalore building brands from idea to impact — brand strategy, content, digital and social, under one roof."
     />
-    <meta name="theme-color" content="#eaded0" />
+    <meta name="theme-color" content="#f7f3ec" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <title>The Cosmic Creator Co. — Content That Gets You Clients</title>
+    <link rel="canonical" href="https://www.thecosmiccreator.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Cosmic Creator Co. — We build brands people remember" />
+    <meta
+      property="og:description"
+      content="Brand strategy. Content. Digital. Social. A creative studio building brands from idea to impact."
+    />
+    <meta property="og:image" content="assets/founder-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
   </head>
   <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <svg width="0" height="0" aria-hidden="true" style="position: absolute">
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path d="M12 0c.6 6.2 5.2 10.8 12 12-6.8 1.2-11.4 5.8-12 12-.6-6.2-5.2-10.8-12-12C6.8 10.8 11.4 6.2 12 0z" />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" />
+      </symbol>
+    </svg>
+
     <div class="loader" id="loader" aria-hidden="true">
       <div class="loader__inner">
         <img
           class="loader__brand"
           src="assets/logo-wordmark.png"
-          alt="The Cosmic Creator Co."
+          alt=""
           width="280"
-          height="128"
+          height="140"
         />
         <div class="loader__bar"><span class="loader__progress"></span></div>
       </div>
     </div>
 
+    <!-- ===== NAV ===== -->
     <header class="nav" id="nav">
-      <a class="nav__logo" href="#top" aria-label="The Cosmic Creator Co. home">
-        <img
-          class="nav__mark"
-          src="assets/logo-mark.png"
-          alt=""
-          width="36"
-          height="36"
-        />
-        <img
-          class="nav__wordmark"
-          src="assets/logo-wordmark.png"
-          alt="The Cosmic Creator Co."
-          width="160"
-          height="74"
-        />
+      <a class="nav__logo" href="#top" aria-label="The Cosmic Creator Co. — home">
+        <img src="assets/logo-wordmark.png" alt="The Cosmic Creator Co." width="200" height="100" />
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#pricing">Pricing</a>
+        <a href="#work">Our Work</a>
+        <a href="#capabilities">What We Do</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
       <a
-        class="nav__cta btn btn--nav"
+        class="nav__cta btn"
         href="https://cal.com/thecosmiccreator"
         target="_blank"
         rel="noopener noreferrer"
-        >Let’s talk</a
+        >Start a project</a
       >
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
         <span></span><span></span>
       </button>
     </header>
 
-    <div class="mobile-nav" id="mobileNav" hidden>
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#pricing">Pricing</a>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#work">Our Work</a>
+      <a href="#capabilities">What We Do</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
-      <a
-        href="https://cal.com/thecosmiccreator"
-        class="btn btn--primary"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Book Free Call</a
+      <a href="https://cal.com/thecosmiccreator" target="_blank" rel="noopener noreferrer"
+        >Start a project</a
       >
     </div>
 
-    <main id="top">
-      <!-- 1. HERO -->
-      <section class="hero" data-section="hero">
-        <div class="hero__atmosphere" aria-hidden="true"></div>
-        <p class="hero__vert" aria-hidden="true">Est. 2024 · Bangalore</p>
-        <div class="hero__grid">
+    <main id="main">
+      <!-- ===== 1 · HERO ===== -->
+      <section class="hero" id="top" data-intro>
+        <div class="shell hero__grid">
           <div class="hero__content">
-            <p class="hero__kicker reveal">
-              <span class="hero__kicker-mark" aria-hidden="true"></span>
-              Content that gets you clients
+            <p class="hero__spine reveal">
+              <span>Brand Strategy</span><span>Content</span><span>Digital</span><span>Social</span>
             </p>
             <h1 class="hero__title">
-              <span class="line"><span class="line__inner">Your business</span></span>
-              <span class="line"><span class="line__inner">deserves to be</span></span>
-              <span class="line"><span class="line__inner"><em>seen. Heard.</em></span></span>
-              <span class="line"><span class="line__inner"><em>Chosen.</em></span></span>
+              <span class="line"><span class="line__inner">We build brands</span></span>
+              <span class="line"><span class="line__inner">people <em class="accent-ital">remember.</em></span></span>
             </h1>
-            <p class="hero__intro reveal">
-              <span class="hero__intro-label">We are</span>
-              <span class="hero__intro-name">The Cosmic Creator Co.</span>
-              <span class="hero__intro-role">A creative studio for founders who want to be unforgettable</span>
-            </p>
             <p class="hero__sub reveal">
-              You’re good at what you do. The problem is — nobody knows it. We fix that.
-              Studio-quality content, posted consistently, that turns your expertise into leads,
-              trust, and clients.
+              A creative studio in Bangalore. We take businesses from a first idea to a brand people
+              notice, trust and choose — strategy, content, websites and social, under one roof.
             </p>
             <div class="hero__actions reveal">
+              <a class="btn" href="#work">View our work</a>
               <a
+                class="btn btn--ghost"
                 href="https://cal.com/thecosmiccreator"
-                class="btn btn--primary"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Book free strategy call</a
+                >Start a project</a
               >
-              <a href="#work" class="text-link text-link--hero">View selected work</a>
             </div>
           </div>
-          <div class="hero__visual reveal">
-            <div class="floaties" aria-hidden="true">
-              <img class="floaty floaty--a" src="assets/illus-reel.webp" alt="" width="96" height="96" />
-              <img class="floaty floaty--b" src="assets/illus-clapper.webp" alt="" width="88" height="88" />
-              <img class="floaty floaty--c" src="assets/illus-growth.webp" alt="" width="84" height="84" />
-              <span class="spark spark--1"></span>
-              <span class="spark spark--2"></span>
-              <span class="spark spark--3"></span>
-            </div>
+
+          <div class="hero__aside reveal">
             <figure class="hero__portrait">
               <img
-                class="hero__image"
                 src="assets/founder-hero.jpg"
                 alt="The founders of The Cosmic Creator Co."
                 width="681"
                 height="851"
                 fetchpriority="high"
               />
-              <figcaption class="hero__frame-label">The founders</figcaption>
             </figure>
-            <p class="hero__caption">Strategy · Production · Growth</p>
+            <p class="hero__note">
+              <span>Est. 2024 · Bangalore</span>
+              <span>Independent studio</span>
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- 2. CREDIBILITY + animated creative strip -->
-      <section class="credibility" data-section="credibility">
-        <p class="credibility__label reveal">What our clients get</p>
-        <div class="cred-cards reveal">
-          <article class="cred-card">
-            <img src="assets/illus-reel.webp" alt="" width="72" height="72" loading="lazy" />
-            <h3>Reels that work</h3>
-            <p>Studio quality, every month</p>
-          </article>
-          <article class="cred-card">
-            <img src="assets/illus-megaphone.webp" alt="" width="72" height="72" loading="lazy" />
-            <h3>More visibility</h3>
-            <p>Right people, right time</p>
-          </article>
-          <article class="cred-card">
-            <img src="assets/illus-growth.webp" alt="" width="72" height="72" loading="lazy" />
-            <h3>Inbound leads</h3>
-            <p>DMs from people ready to buy</p>
-          </article>
-          <article class="cred-card">
-            <img src="assets/illus-clapper.webp" alt="" width="72" height="72" loading="lazy" />
-            <h3>Authority</h3>
-            <p>Known as the go-to in your field</p>
-          </article>
-        </div>
-        <p class="credibility__marquee-label reveal" aria-hidden="true">
-          Reel Production · Instagram & Facebook · Content Strategy · Creative Direction · Social
-          Media Management · Personal Branding · Lead Generation · Growth Tracking
-        </p>
-      </section>
-
-      <!-- Animated creative showcase -->
-      <section class="creative-band" aria-label="Creative energy">
-        <div class="creative-band__track" aria-hidden="true">
-          <div class="creative-band__item"><img src="assets/illus-reel.webp" alt="" /><span>Hook</span></div>
-          <div class="creative-band__item"><img src="assets/illus-megaphone.webp" alt="" /><span>Reach</span></div>
-          <div class="creative-band__item"><img src="assets/illus-growth.webp" alt="" /><span>Leads</span></div>
-          <div class="creative-band__item"><img src="assets/illus-clapper.webp" alt="" /><span>Shoot</span></div>
-          <div class="creative-band__item"><img src="assets/illus-reel.webp" alt="" /><span>Edit</span></div>
-          <div class="creative-band__item"><img src="assets/illus-megaphone.webp" alt="" /><span>Post</span></div>
-          <div class="creative-band__item"><img src="assets/illus-growth.webp" alt="" /><span>Grow</span></div>
-          <div class="creative-band__item"><img src="assets/illus-clapper.webp" alt="" /><span>Repeat</span></div>
-          <div class="creative-band__item"><img src="assets/illus-reel.webp" alt="" /><span>Hook</span></div>
-          <div class="creative-band__item"><img src="assets/illus-megaphone.webp" alt="" /><span>Reach</span></div>
-          <div class="creative-band__item"><img src="assets/illus-growth.webp" alt="" /><span>Leads</span></div>
-          <div class="creative-band__item"><img src="assets/illus-clapper.webp" alt="" /><span>Shoot</span></div>
-        </div>
-      </section>
-
-      <!-- 3. PROBLEM -->
-      <section class="problem" data-section="problem">
-        <div class="section-head">
-          <p class="eyebrow reveal">Sound familiar?</p>
-          <h2 class="section-title reveal">
-            You’re posting.<br />
-            But nothing’s<br />
-            <em class="accent-ital">happening.</em>
-          </h2>
-          <p class="section-lead reveal">
-            You’re not lazy. You’re not untalented. You just don’t have the right system — the right
-            visuals, the right hooks, the right consistency — to make people stop scrolling and
-            actually pay attention.
-          </p>
-          <p class="section-lead reveal">
-            Here’s the truth: the best business doesn’t always win. The most visible one does. And
-            visibility is a skill we can build for you.
-          </p>
-        </div>
-        <div class="problem__grid">
-          <article class="problem__item reveal">
-            <span class="problem__num">01</span>
-            <h3>You post, but nobody engages</h3>
-            <p>
-              Views are low, likes are from friends, and clients still come from referrals — not
-              your content.
+      <!-- ===== 2 · POSITIONING ===== -->
+      <section class="section section--tight">
+        <div class="shell">
+          <div class="head">
+            <h2 class="h2">
+              From the first idea<br />
+              to the final post.
+            </h2>
+            <p class="lead head__lead">
+              We bring brand thinking, creative content and digital experiences together — so a brand
+              looks good, feels right and actually means something.
             </p>
-          </article>
-          <article class="problem__item reveal">
-            <span class="problem__num">02</span>
-            <h3>Your content looks DIY</h3>
-            <p>
-              Phone camera, rushed captions, no real strategy. It doesn’t reflect how good your
-              actual work is.
-            </p>
-          </article>
-          <article class="problem__item reveal">
-            <span class="problem__num">03</span>
-            <h3>You don’t know what to post</h3>
-            <p>
-              Some days inspiration strikes. Most days it doesn’t. There’s no system — just
-              guessing.
-            </p>
-          </article>
-          <article class="problem__item reveal">
-            <span class="problem__num">04</span>
-            <h3>Invisible to the right people</h3>
-            <p>
-              Your ideal client is on Instagram right now — but they’ve never seen your name.
-            </p>
-          </article>
-          <article class="problem__item reveal">
-            <span class="problem__num">05</span>
-            <h3>Too busy running the business</h3>
-            <p>
-              So content keeps getting pushed to “next week.” The brand never becomes a growth
-              engine.
-            </p>
-          </article>
-        </div>
-        <div class="section-cta reveal">
-          <a
-            href="https://cal.com/thecosmiccreator"
-            class="btn btn--primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Let’s Fix This</a
-          >
-        </div>
-      </section>
-
-      <!-- 4. SOLUTION -->
-      <section class="solution" data-section="solution">
-        <div class="section-head section-head--center">
-          <p class="eyebrow reveal">Here’s what changes</p>
-          <h2 class="section-title reveal">
-            We build your presence<br />
-            so clients come to <em class="accent-ital">you.</em>
-          </h2>
-        </div>
-        <div class="solution__compare">
-          <div class="solution__col solution__col--before reveal">
-            <span class="solution__tag">Before</span>
-            <ul>
-              <li>Posting without a system</li>
-              <li>DIY content that undersells you</li>
-              <li>Guessing what to say</li>
-              <li>Leads stuck in referrals</li>
-            </ul>
           </div>
-          <div class="solution__divider" aria-hidden="true"><span>→</span></div>
-          <div class="solution__col solution__col--after reveal">
-            <span class="solution__tag solution__tag--accent">After</span>
-            <ul>
-              <li>A full content system</li>
-              <li>Studio-quality reels, every month</li>
-              <li>Strategy built around your buyer</li>
-              <li>Inbound DMs from people ready to buy</li>
-            </ul>
+
+          <div class="pillars reveal">
+            <div class="pillar">
+              <h3 class="pillar__name">
+                <svg class="star" aria-hidden="true"><use href="#i-star" /></svg>Brand
+              </h3>
+              <p>Strategy · Positioning · Identity</p>
+            </div>
+            <div class="pillar">
+              <h3 class="pillar__name">
+                <svg class="star" aria-hidden="true"><use href="#i-star" /></svg>Content
+              </h3>
+              <p>Reels · Photography · Video · Campaigns</p>
+            </div>
+            <div class="pillar">
+              <h3 class="pillar__name">
+                <svg class="star" aria-hidden="true"><use href="#i-star" /></svg>Digital
+              </h3>
+              <p>Websites · Landing Pages · Digital Experiences</p>
+            </div>
+            <div class="pillar">
+              <h3 class="pillar__name">
+                <svg class="star" aria-hidden="true"><use href="#i-star" /></svg>Social
+              </h3>
+              <p>Instagram · Facebook · Strategy · Management</p>
+            </div>
           </div>
         </div>
-        <p class="solution__statement reveal">
-          Not a one-time photoshoot. Not a random reel. A full content system — built around your
-          business, posted consistently, designed to convert.
-        </p>
       </section>
 
-      <!-- 5. PROCESS -->
-      <section class="process" id="process" data-section="process">
-        <div class="section-head">
-          <p class="eyebrow reveal">How we work</p>
-          <h2 class="section-title reveal">
-            A process built for<br />
-            <em class="accent-ital">real results.</em>
-          </h2>
-        </div>
-        <ol class="process__list">
-          <li class="process__step reveal">
-            <span class="process__num">01</span>
-            <div class="process__body">
-              <h3>We learn your business</h3>
-              <p>
-                We start with a deep strategy session. Your industry, your ideal client, what makes
-                you different. We build your content around that — not some generic template.
-              </p>
+      <!-- ===== 3 · SELECTED WORK ===== -->
+      <section class="section" id="work">
+        <div class="shell">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Selected work</p>
+              <h2 class="h2">Work we’re<br /><em class="accent-ital">proud of.</em></h2>
             </div>
-          </li>
-          <li class="process__step reveal">
-            <span class="process__num">02</span>
-            <div class="process__body">
-              <h3>We shoot studio-quality content</h3>
-              <p>
-                Professional crew. Cinematic reels. You show up, we handle everything else —
-                scripting, directing, editing, captions, music. The kind of content that makes
-                people stop and watch.
-              </p>
-            </div>
-          </li>
-          <li class="process__step reveal">
-            <span class="process__num">03</span>
-            <div class="process__body">
-              <h3>We post, manage & grow</h3>
-              <p>
-                Your Instagram and Facebook — fully managed. We post at the right times, track
-                what’s working, optimise every month. You focus on your business. We focus on your
-                brand.
-              </p>
-            </div>
-          </li>
-        </ol>
-      </section>
+            <p class="lead head__lead">
+              Three brands, three very different problems. In each one we started with the business
+              before we started with the design.
+            </p>
+          </div>
 
-      <!-- 6. SERVICES -->
-      <section class="services" id="services" data-section="services">
-        <div class="section-head">
-          <p class="eyebrow reveal">What we do</p>
-          <h2 class="section-title reveal">
-            Everything you need.<br />
-            <em class="accent-ital">None of the hassle.</em>
-          </h2>
-          <p class="section-lead reveal">
-            Four services. Each one designed to get you more business — without adding to your plate.
-          </p>
-        </div>
-        <div class="services__list">
-          <article class="service reveal">
-            <span class="service__num">01</span>
-            <div class="service__icon" aria-hidden="true">
-              <img src="assets/illus-reel.webp" alt="" width="64" height="64" loading="lazy" />
-            </div>
-            <div class="service__content">
-              <h3>Content Production</h3>
-              <p>
-                Studio-quality reels, posters & creatives — scripted, shot, edited and delivered
-                every month. Hooks built to stop the scroll.
-              </p>
-            </div>
-            <a class="service__cta" href="#pricing">See plans <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="service reveal">
-            <span class="service__num">02</span>
-            <div class="service__icon" aria-hidden="true">
-              <img src="assets/illus-megaphone.webp" alt="" width="64" height="64" loading="lazy" />
-            </div>
-            <div class="service__content">
-              <h3>Social Media Management</h3>
-              <p>
-                Your Instagram & Facebook, fully handled. Posting, scheduling, captions, growth —
-                all of it. An active presence without you touching your phone for work.
-              </p>
-            </div>
-            <a class="service__cta" href="#pricing">See plans <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="service reveal">
-            <span class="service__num">03</span>
-            <div class="service__icon" aria-hidden="true">
-              <img src="assets/illus-growth.webp" alt="" width="64" height="64" loading="lazy" />
-            </div>
-            <div class="service__content">
-              <h3>Brand Strategy</h3>
-              <p>
-                We position you as the expert. Content pillars, messaging, and the strategy that
-                makes every reel actually do something.
-              </p>
-            </div>
+          <div class="work__list">
+            <!-- Project 01 -->
+            <article class="project reveal">
+              <a class="project__media" href="work/pharma-force-india.html" tabindex="-1" aria-hidden="true">
+                <span class="project__index">01</span>
+                <img
+                  src="assets/case-pharma.jpg"
+                  alt=""
+                  width="1600"
+                  height="1066"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project__body">
+                <span class="project__cat">Healthcare &amp; pharma · Bengaluru</span>
+                <h3 class="project__title">
+                  <a href="work/pharma-force-india.html">Pharma Force India</a>
+                </h3>
+                <p class="project__desc">
+                  A Karnataka-wide distributor of WHO-GMP medicines with no digital presence to match
+                  the trust their buyers needed. We built one — for pharmacies, hospitals and
+                  households at the same time.
+                </p>
+                <ul class="project__services">
+                  <li>Brand Positioning</li>
+                  <li>Messaging</li>
+                  <li>Website</li>
+                  <li>Content</li>
+                </ul>
+                <a class="tlink" href="work/pharma-force-india.html"
+                  >Read the case study
+                  <svg class="star arrow" width="14" height="14" aria-hidden="true"><use href="#i-arrow" /></svg
+                ></a>
+              </div>
+            </article>
+
+            <!-- Project 02 -->
+            <article class="project project--flip project--tall reveal">
+              <a class="project__media" href="work/sarmi-jewels.html" tabindex="-1" aria-hidden="true">
+                <span class="project__index">02</span>
+                <img src="assets/case-sarmi.jpg" alt="" width="1600" height="1066" loading="lazy" />
+              </a>
+              <div class="project__body">
+                <span class="project__cat">D2C jewellery · Pan-India</span>
+                <h3 class="project__title"><a href="work/sarmi-jewels.html">Sarmi Jewels</a></h3>
+                <p class="project__desc">
+                  925 sterling silver for everyday wear. The jewellery was refined; the brand around
+                  it wasn’t yet. We gave it a voice, a look and a place to be discovered.
+                </p>
+                <ul class="project__services">
+                  <li>Brand Identity</li>
+                  <li>Ecommerce Storytelling</li>
+                  <li>Social</li>
+                  <li>Content</li>
+                </ul>
+                <a class="tlink" href="work/sarmi-jewels.html"
+                  >Read the case study
+                  <svg class="star arrow" width="14" height="14" aria-hidden="true"><use href="#i-arrow" /></svg
+                ></a>
+              </div>
+            </article>
+
+            <!-- Project 03 -->
+            <article class="project reveal">
+              <a class="project__media" href="work/laptech.html" tabindex="-1" aria-hidden="true">
+                <span class="project__index">03</span>
+                <img
+                  src="assets/case-laptech.jpg?v=2"
+                  alt=""
+                  width="1365"
+                  height="1024"
+                  loading="lazy"
+                />
+              </a>
+              <div class="project__body">
+                <span class="project__cat">IT infrastructure · Bengaluru</span>
+                <h3 class="project__title"><a href="work/laptech.html">LAPTECH</a></h3>
+                <p class="project__desc">
+                  Fifteen years of expertise reading like a scattered vendor list. We rebuilt the
+                  story around nine solution lines and turned it into one credible partner.
+                </p>
+                <ul class="project__services">
+                  <li>Brand Strategy</li>
+                  <li>Website</li>
+                  <li>Brochures</li>
+                  <li>Marketing Content</li>
+                </ul>
+                <a class="tlink" href="work/laptech.html"
+                  >Read the case study
+                  <svg class="star arrow" width="14" height="14" aria-hidden="true"><use href="#i-arrow" /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+
+          <p class="work__foot reveal">
+            <span>Healthcare · Jewellery &amp; D2C · IT infrastructure</span>
             <a
-              class="service__cta"
+              class="tlink"
               href="https://cal.com/thecosmiccreator"
               target="_blank"
               rel="noopener noreferrer"
-              >Book strategy session <span aria-hidden="true">→</span></a
-            >
-          </article>
-          <article class="service reveal">
-            <span class="service__num">04</span>
-            <div class="service__icon" aria-hidden="true">
-              <img src="assets/illus-clapper.webp" alt="" width="64" height="64" loading="lazy" />
-            </div>
-            <div class="service__content">
-              <h3>Website Building</h3>
-              <p>
-                Premium websites built to convert — brand storytelling, clear offers, and fast
-                pages that turn visitors into enquiries. From first impression to final CTA.
-              </p>
-            </div>
-            <a class="service__cta" href="#work">See our work <span aria-hidden="true">→</span></a>
-          </article>
-        </div>
-      </section>
-
-      <!-- 7. CASE STUDIES -->
-      <section class="work" id="work" data-section="work">
-        <div class="section-head">
-          <p class="eyebrow reveal">Real results</p>
-          <h2 class="section-title reveal">
-            Projects we’ve<br />
-            actually <em class="accent-ital">shipped.</em>
-          </h2>
-        </div>
-
-        <article class="case case--a reveal">
-          <div class="case__media">
-            <img
-              src="assets/case-pharma.jpg"
-              alt="Pharmaceutical medicines and healthcare packaging"
-              width="1600"
-              height="1066"
-              loading="lazy"
-            />
-          </div>
-          <div class="case__meta">
-            <span class="case__cat">Healthcare · Pharma · Bengaluru</span>
-            <h3>Pharma Force India</h3>
-            <dl class="case__facts">
-              <div>
-                <dt>Challenge</dt>
-                <dd>
-                  A Karnataka-wide pharmaceutical distributor needed a digital presence as trusted
-                  as their WHO-GMP medicines — clear for pharmacies, hospitals, clinics, and
-                  individual buyers.
-                </dd>
-              </div>
-              <div>
-                <dt>Solution</dt>
-                <dd>
-                  Built a conversion-led brand website and messaging system around availability,
-                  quality, and distribution — brand partners, therapeutic catalog pathways, and
-                  WhatsApp-first enquiry flows.
-                </dd>
-              </div>
-              <div>
-                <dt>Outcome</dt>
-                <dd>
-                  Live site with B2B + B2C journeys, institutional trust signals, and a clear path
-                  to enquire across 2,000+ medicines and 9+ brand partners.
-                </dd>
-              </div>
-            </dl>
-            <div class="case__links">
-              <a
-                class="text-link"
-                href="https://www.pharmaforceindia.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Visit pharmaforceindia.com →</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="case case--b reveal">
-          <div class="case__media">
-            <img
-              src="assets/case-sarmi.jpg"
-              alt="Elegant silver jewellery styling"
-              width="1600"
-              height="1066"
-              loading="lazy"
-            />
-          </div>
-          <div class="case__meta">
-            <span class="case__cat">D2C · Fashion &amp; Jewellery</span>
-            <h3>Sarmi Jewels</h3>
-            <dl class="case__facts">
-              <div>
-                <dt>Challenge</dt>
-                <dd>
-                  A modern 925 sterling silver brand needed an online presence that felt as refined
-                  as the jewellery — everyday elegance, hallmarked trust, and social discovery that
-                  converts browsers into buyers.
-                </dd>
-              </div>
-              <div>
-                <dt>Solution</dt>
-                <dd>
-                  Elevated ecommerce storytelling and social content direction across Instagram and
-                  Facebook — product-led visuals, collection narratives, and a brand voice built for
-                  desire and repeat purchase.
-                </dd>
-              </div>
-              <div>
-                <dt>Outcome</dt>
-                <dd>
-                  Live storefront at sarmi.in with BIS-hallmarked positioning, free pan-India
-                  shipping story, and an active social presence for ongoing brand growth.
-                </dd>
-              </div>
-            </dl>
-            <div class="case__links">
-              <a
-                class="text-link"
-                href="https://sarmi.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Visit sarmi.in →</a
-              >
-              <a
-                class="text-link"
-                href="https://www.instagram.com/sarmijewels/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Instagram →</a
-              >
-              <a
-                class="text-link"
-                href="https://www.facebook.com/profile.php?id=61592576732424"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Facebook →</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="case case--a reveal">
-          <div class="case__media">
-            <img
-              src="assets/case-laptech.jpg?v=2"
-              alt="Professional CCTV security camera — LAPTECH infrastructure"
-              width="1365"
-              height="1024"
-              loading="lazy"
-            />
-          </div>
-          <div class="case__meta">
-            <span class="case__cat">IT · Infrastructure · Bengaluru</span>
-            <h3>LAPTECH</h3>
-            <dl class="case__facts">
-              <div>
-                <dt>Challenge</dt>
-                <dd>
-                  A 15+ year IT infrastructure partner needed a digital presence that explained their
-                  full stack — hardware, CCTV, networking, power, fire safety, and more — without
-                  feeling like a scattered vendor list.
-                </dd>
-              </div>
-              <div>
-                <dt>Solution</dt>
-                <dd>
-                  Designed and built their complete website, digital marketing brochures, and brand
-                  content — clear solution storytelling, industry pages, trust signals, and
-                  consultation-led CTAs for homes, businesses, and enterprises.
-                </dd>
-              </div>
-              <div>
-                <dt>Outcome</dt>
-                <dd>
-                  Live end-to-end site covering 9 solution lines, industry use-cases, AMC support
-                  narrative, and a polished brand system ready for sales and marketing.
-                </dd>
-              </div>
-            </dl>
-            <div class="case__links">
-              <a
-                class="text-link"
-                href="https://laptech-one.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Visit LAPTECH website →</a
-              >
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- 8. RESULTS -->
-      <section class="results" data-section="results">
-        <div class="section-head section-head--center">
-          <p class="eyebrow reveal">Impact</p>
-          <h2 class="section-title reveal">Built for brands that mean it.</h2>
-        </div>
-        <div class="results__grid">
-          <div class="result reveal">
-            <span class="result__value" data-count="3">0</span>
-            <p class="result__label">Featured client brands</p>
-          </div>
-          <div class="result reveal">
-            <span class="result__value" data-count="3">0</span>
-            <p class="result__label">Live digital experiences</p>
-          </div>
-          <div class="result reveal">
-            <span class="result__value" data-count="9">0</span><span class="result__suffix">+</span>
-            <p class="result__label">Solution lines for LAPTECH</p>
-          </div>
-          <div class="result reveal">
-            <span class="result__value" data-count="100">0</span><span class="result__suffix">%</span>
-            <p class="result__label">Done-for-you delivery</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 9. TESTIMONIALS / CLIENT SPOTLIGHT -->
-      <section class="testimonials" data-section="testimonials">
-        <div class="section-head">
-          <p class="eyebrow reveal">Client spotlight</p>
-          <h2 class="section-title reveal">
-            Brands we help<br />
-            get <em class="accent-ital">seen.</em>
-          </h2>
-        </div>
-        <div class="testimonials__stage">
-          <blockquote class="testimonial is-active" data-testimonial="0">
-            <p class="testimonial__quote">
-              “Pharma Force distributes WHO-GMP branded generics across Karnataka — pharmacies,
-              hospitals, clinics, and individuals. Their digital presence now matches the trust
-              their medicines demand.”
-            </p>
-            <footer class="testimonial__author">
-              <div class="testimonial__avatar" aria-hidden="true">PF</div>
-              <div>
-                <cite>Pharma Force India</cite>
-                <span>Healthcare distribution · Bengaluru</span>
-                <a
-                  class="testimonial__link"
-                  href="https://www.pharmaforceindia.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >pharmaforceindia.com</a
-                >
-              </div>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial" data-testimonial="1" hidden>
-            <p class="testimonial__quote">
-              “Sarmi crafts modern 925 sterling silver jewellery for everyday elegance —
-              hallmarked, authenticated, and built to be discovered online and on social.”
-            </p>
-            <footer class="testimonial__author">
-              <div class="testimonial__avatar" aria-hidden="true">SJ</div>
-              <div>
-                <cite>Sarmi Jewels</cite>
-                <span>D2C jewellery · Instagram &amp; Facebook</span>
-                <a
-                  class="testimonial__link"
-                  href="https://sarmi.in/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >sarmi.in</a
-                >
-              </div>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial" data-testimonial="2" hidden>
-            <p class="testimonial__quote">
-              “LAPTECH delivers end-to-end IT infrastructure, surveillance, networking, and power
-              solutions. We built their website, brochures, and marketing content so the full story
-              finally reads as one trusted partner.”
-            </p>
-            <footer class="testimonial__author">
-              <div class="testimonial__avatar" aria-hidden="true">LT</div>
-              <div>
-                <cite>LAPTECH</cite>
-                <span>IT infrastructure · Security · Power · Bengaluru</span>
-                <a
-                  class="testimonial__link"
-                  href="https://laptech-one.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >laptech-one.vercel.app</a
-                >
-              </div>
-            </footer>
-          </blockquote>
-          <div class="testimonials__controls">
-            <button type="button" class="t-dot is-active" data-goto="0" aria-label="Show client 1"></button>
-            <button type="button" class="t-dot" data-goto="1" aria-label="Show client 2"></button>
-            <button type="button" class="t-dot" data-goto="2" aria-label="Show client 3"></button>
-          </div>
-        </div>
-      </section>
-
-      <!-- 10. ABOUT -->
-      <section class="about" id="about" data-section="about">
-        <div class="about__grid">
-          <div class="about__copy">
-            <p class="eyebrow reveal">About us</p>
-            <h2 class="section-title reveal">
-              We build brands that make people <em class="accent-ital">reach out to you.</em>
-            </h2>
-            <p class="about__lead reveal">
-              Not a one-time service. Not a template. A proper content system, built around your
-              business — run by people who genuinely care whether it works.
-            </p>
-            <p class="about__body reveal">
-              We kept meeting founders with incredible expertise — but nobody online knew they
-              existed. Meanwhile, mediocre competitors with better content were winning the clients.
-              That’s wrong. And it’s fixable.
-            </p>
-            <ul class="about__pillars reveal">
-              <li>
-                <strong>Done for you</strong> Strategy, production, management — you show up for
-                filming. We handle everything else.
-              </li>
-              <li>
-                <strong>Revenue-first</strong> We care about leads and deals, not just views. Every
-                decision is made with business growth in mind.
-              </li>
-              <li>
-                <strong>Consistent quality</strong> Studio-level content, every single month. Not
-                rushed. Not generic. Built around your brand.
-              </li>
-            </ul>
-          </div>
-          <div class="about__visual reveal">
-            <img
-              src="assets/founder-hero.jpg"
-              alt="The founders of The Cosmic Creator Co."
-              width="681"
-              height="851"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- PRICING -->
-      <section class="pricing" id="pricing" data-section="pricing">
-        <div class="section-head section-head--center">
-          <p class="eyebrow reveal">Plans</p>
-          <h2 class="section-title reveal">
-            Simple plans.<br />
-            <em class="accent-ital">Clear deliverables.</em>
-          </h2>
-          <p class="section-lead reveal">
-            Pick what fits where you are. WhatsApp us to get started — no complicated checkout, no
-            hidden fees.
+              >Have a project in mind?
+              <svg class="star arrow" width="14" height="14" aria-hidden="true"><use href="#i-arrow" /></svg
+            ></a>
           </p>
         </div>
-        <div class="pricing__grid">
-          <article class="price-card reveal">
-            <p class="price-card__tier">Essential</p>
-            <p class="price-card__tag">Foundation</p>
-            <p class="price-card__amount"><span>₹40K</span> <small>per month + GST</small></p>
-            <ul>
-              <li>6 high-quality reels per month</li>
-              <li>Instagram & Facebook management</li>
-              <li>Posting and scheduling</li>
-              <li>Creative direction</li>
-              <li>Monthly growth tracking</li>
-              <li>Monthly performance summary</li>
-            </ul>
-            <p class="price-card__fit">Best for small businesses & early-stage founders</p>
-            <a
-              class="btn btn--ghost"
-              href="https://wa.me/919611145162"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Enquire on WhatsApp</a
-            >
-          </article>
-          <article class="price-card price-card--featured reveal">
-            <p class="price-card__badge">Most Popular</p>
-            <p class="price-card__tier">Elevate</p>
-            <p class="price-card__tag">Scale</p>
-            <p class="price-card__amount"><span>₹60K</span> <small>per month + GST</small></p>
-            <ul>
-              <li>8 high-quality reels per month</li>
-              <li>4 posters per month</li>
-              <li>Full Instagram & Facebook management</li>
-              <li>Engagement & reach strategies</li>
-              <li>Page optimisation</li>
-              <li>One strategy call per month</li>
-            </ul>
-            <p class="price-card__fit">Best for growing businesses & personal brands</p>
-            <a
-              class="btn btn--primary"
-              href="https://wa.me/919611145162"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Enquire on WhatsApp</a
-            >
-          </article>
-          <article class="price-card reveal">
-            <p class="price-card__tier">Elite</p>
-            <p class="price-card__tag">Dominate</p>
-            <p class="price-card__amount"><span>₹85K</span> <small>per month + GST</small></p>
-            <ul>
-              <li>12 high-quality reels + 8 posters</li>
-              <li>2 strategy calls per month</li>
-              <li>Weekly performance reports</li>
-              <li>Priority 24hr support</li>
-              <li>Story & highlights management</li>
-              <li>Quarterly brand audit & refresh</li>
-            </ul>
-            <p class="price-card__fit">Best for premium & founder-led brands</p>
-            <a
-              class="btn btn--ghost"
-              href="https://wa.me/919611145162"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Enquire on WhatsApp</a
-            >
-          </article>
+      </section>
+
+      <!-- ===== 4 · WHAT WE DO ===== -->
+      <section class="section band-almond" id="capabilities">
+        <div class="shell">
+          <div class="head">
+            <div>
+              <p class="eyebrow">What we do</p>
+              <h2 class="h2">Four things,<br />done properly.</h2>
+            </div>
+            <p class="lead head__lead">
+              Most brands don’t need fifty services. They need these four working together, in the
+              right order.
+            </p>
+          </div>
+
+          <div class="capabilities">
+            <article class="capability reveal">
+              <span class="capability__num">01</span>
+              <h3 class="capability__title">Brand</h3>
+              <div class="capability__copy">
+                <p>
+                  We work out who you are, what you stand for and how you should be seen — before
+                  anyone designs anything.
+                </p>
+                <ul class="capability__tags">
+                  <li>Strategy</li>
+                  <li>Positioning</li>
+                  <li>Brand Identity</li>
+                  <li>Messaging</li>
+                  <li>Brand Guidelines</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="capability reveal">
+              <span class="capability__num">02</span>
+              <h3 class="capability__title">Content</h3>
+              <div class="capability__copy">
+                <p>We turn the brand into content people actually want to watch.</p>
+                <ul class="capability__tags">
+                  <li>Reels</li>
+                  <li>Photography</li>
+                  <li>Video</li>
+                  <li>Campaigns</li>
+                  <li>Social Creatives</li>
+                  <li>Copy</li>
+                  <li>Content Strategy</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="capability reveal">
+              <span class="capability__num">03</span>
+              <h3 class="capability__title">Digital</h3>
+              <div class="capability__copy">
+                <p>
+                  We build the places people land — so the brand feels as good online as it does
+                  everywhere else.
+                </p>
+                <ul class="capability__tags">
+                  <li>Websites</li>
+                  <li>Landing Pages</li>
+                  <li>Ecommerce</li>
+                  <li>Digital Experiences</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="capability reveal">
+              <span class="capability__num">04</span>
+              <h3 class="capability__title">Social &amp; Marketing</h3>
+              <div class="capability__copy">
+                <p>We keep the brand visible, relevant and consistent — month after month.</p>
+                <ul class="capability__tags">
+                  <li>Instagram</li>
+                  <li>Facebook</li>
+                  <li>Social Management</li>
+                  <li>Content Marketing</li>
+                  <li>Digital Marketing</li>
+                  <li>Campaigns</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <!-- 11. FINAL CTA -->
-      <section class="final-cta" id="contact" data-section="cta">
-        <img
-          class="final-cta__mascot"
-          src="assets/illus-clapper.webp"
-          alt=""
-          width="110"
-          height="110"
-          aria-hidden="true"
-        />
-        <p class="eyebrow reveal">No commitment. Just clarity.</p>
-        <h2 class="final-cta__title">
-          <span class="line"><span class="line__inner">30 minutes. We’ll show you</span></span>
-          <span class="line"><span class="line__inner">exactly what’s missing and</span></span>
-          <span class="line"
-            ><span class="line__inner">how to <em class="accent-ital">fix it.</em></span></span
-          >
-        </h2>
-        <p class="final-cta__sub reveal">
-          Free strategy call. No pitch, no pressure. Just an honest look at your content, and a
-          clear plan to get you more business from it.
-        </p>
-        <div class="final-cta__actions reveal">
-          <a
-            class="btn btn--primary btn--xl"
-            href="https://cal.com/thecosmiccreator"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Book Your Free Call</a
-          >
-          <a
-            class="btn btn--ghost btn--ghost-light btn--xl"
-            href="https://wa.me/919611145162"
-            target="_blank"
-            rel="noopener noreferrer"
-            >WhatsApp Us Instead</a
-          >
+      <!-- ===== 5 · OUR DIFFERENCE ===== -->
+      <section class="section band-noir">
+        <div class="shell">
+          <p class="eyebrow">Our difference</p>
+          <h2 class="h2 difference__statement">
+            We don’t just make things <em class="accent-ital">look good.</em>
+          </h2>
+
+          <ol class="questions reveal">
+            <li><span>01</span>What does the brand need to say?</li>
+            <li><span>02</span>Who does it need to reach?</li>
+            <li><span>03</span>Why should they care?</li>
+            <li><span>04</span>How do we make it memorable?</li>
+          </ol>
+
+          <div class="flow reveal">
+            <span class="flow__step">Strategy</span>
+            <span class="flow__step">Create</span>
+            <span class="flow__step">Launch</span>
+            <span class="flow__step">Grow</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6 · HOW WE WORK ===== -->
+      <section class="section">
+        <div class="shell">
+          <div class="head head--solo">
+            <div>
+              <p class="eyebrow">How we work</p>
+              <h2 class="h2">Four steps.<br />No mystery.</h2>
+            </div>
+          </div>
+
+          <div class="steps">
+            <article class="step reveal">
+              <span class="step__num">01</span>
+              <h3>Discover</h3>
+              <p>We understand your business, your audience and your ambition.</p>
+            </article>
+            <article class="step reveal">
+              <span class="step__num">02</span>
+              <h3>Define</h3>
+              <p>We set the strategy, the positioning and the creative direction.</p>
+            </article>
+            <article class="step reveal">
+              <span class="step__num">03</span>
+              <h3>Create</h3>
+              <p>We bring it to life through design, content and digital.</p>
+            </article>
+            <article class="step reveal">
+              <span class="step__num">04</span>
+              <h3>Grow</h3>
+              <p>We launch, learn and keep making it better.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7 · BELIEF ===== -->
+      <section class="section band-almond">
+        <div class="shell belief">
+          <svg class="belief__mark" aria-hidden="true" viewBox="0 0 24 24"><use href="#i-star" /></svg>
+          <h2 class="belief__title">
+            Good brands don’t just sell.<br />
+            They make people <em class="accent-ital">feel something.</em>
+          </h2>
+          <p class="belief__sub reveal">
+            Our job is to help ambitious businesses become clear, distinctive and impossible to
+            ignore.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== 8 · ABOUT / FOUNDERS ===== -->
+      <section class="section" id="about">
+        <div class="shell">
+          <div class="founders">
+            <figure class="founders__media reveal">
+              <img
+                src="assets/founder-hero.jpg"
+                alt="The founders of The Cosmic Creator Co."
+                width="681"
+                height="851"
+                loading="lazy"
+              />
+            </figure>
+            <div class="founders__copy">
+              <p class="eyebrow">Why we started</p>
+              <h2 class="h2 reveal" style="margin-bottom: 1.75rem">
+                Too many good businesses<br />were invisible.
+              </h2>
+              <p class="reveal">
+                We kept meeting founders who were genuinely excellent at what they did — and whose
+                customers had no way of knowing it.
+              </p>
+              <p class="reveal">
+                A good product isn’t enough any more. People meet a brand through a website, a reel,
+                a campaign or a conversation long before they ever become customers. When those
+                pieces are handled by four different people, the brand comes out in four different
+                voices.
+              </p>
+              <p class="reveal">
+                So we built a studio that keeps them together — strategy, storytelling, design and
+                content, under one roof.
+              </p>
+
+              <!-- TODO: replace the two names below with the founders' real names. -->
+              <div class="people reveal">
+                <div class="person">
+                  <span class="person__role">Co-founder</span>
+                  <p class="person__name">[Founder name]</p>
+                  <p>Strategy &amp; brand direction. Starts every project with the business, not the brief.</p>
+                </div>
+                <div class="person">
+                  <span class="person__role">Co-founder</span>
+                  <p class="person__name">[Founder name]</p>
+                  <p>Creative &amp; production. Turns the strategy into things people stop and watch.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 9 · MISSION / VISION ===== -->
+      <section class="section section--tight">
+        <div class="shell creed">
+          <div class="creed__item reveal">
+            <h3>Our mission</h3>
+            <p>To help ambitious businesses build brands that are clear, distinctive and impossible to ignore.</p>
+          </div>
+          <div class="creed__item reveal">
+            <h3>Our vision</h3>
+            <p>To make good businesses look as good as they actually are.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 10 · FINAL CTA ===== -->
+      <section class="section band-noir" id="contact">
+        <div class="shell cta">
+          <h2 class="cta__title">
+            <span class="line"><span class="line__inner">Have a brand that</span></span>
+            <span class="line"><span class="line__inner">deserves more <em class="accent-ital">attention?</em></span></span>
+          </h2>
+          <p class="cta__sub reveal">
+            Tell us what you’re building. We’ll tell you honestly what it needs — and whether we’re
+            the right studio for it.
+          </p>
+          <div class="cta__actions reveal">
+            <a
+              class="btn"
+              href="https://cal.com/thecosmiccreator"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Start a project</a
+            >
+            <a
+              class="btn btn--ghost"
+              href="https://wa.me/919611145162"
+              target="_blank"
+              rel="noopener noreferrer"
+              >WhatsApp us</a
+            >
+          </div>
+          <p class="cta__direct reveal">
+            <a href="mailto:sales@thecosmiccreator.com">sales@thecosmiccreator.com</a>
+            <a href="tel:+919611145162">+91 96111 45162</a>
+            <span>Bangalore, India</span>
+          </p>
         </div>
       </section>
     </main>
 
-    <!-- 12. FOOTER -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-      <div class="footer__top">
-        <div>
-          <a class="footer__logo" href="#top" aria-label="The Cosmic Creator Co. home">
-            <img
-              src="assets/logo-wordmark-light.png"
-              alt="The Cosmic Creator Co."
-              width="200"
-              height="92"
-            />
-          </a>
-          <p class="footer__blurb">
-            Helps founders across India build authority and generate leads through strategy-led
-            content — done for you, every month, without lifting a finger.
-          </p>
-          <p class="footer__meta">
-            Pharma · Jewellery · IT infrastructure · Based in Bangalore
-          </p>
-        </div>
-        <div class="footer__cols">
+      <div class="shell">
+        <div class="footer__top">
           <div>
-            <h4>Pages</h4>
-            <a href="#top">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#work">Work</a>
-            <a href="#pricing">Pricing</a>
+            <a class="footer__logo" href="#top" aria-label="The Cosmic Creator Co. — home">
+              <img
+                src="assets/logo-wordmark-light.png"
+                alt="The Cosmic Creator Co."
+                width="200"
+                height="92"
+                loading="lazy"
+              />
+            </a>
+            <p class="footer__tag">Brand · Content · Digital · Social</p>
           </div>
-          <div>
-            <h4>Get in touch</h4>
-            <a href="tel:+919611145162">+91 96111 45162</a>
-            <a href="mailto:sales@thecosmiccreator.com">sales@thecosmiccreator.com</a>
-            <a href="https://cal.com/thecosmiccreator" target="_blank" rel="noopener noreferrer"
-              >Book a Call</a
-            >
-            <a href="https://wa.me/919611145162" target="_blank" rel="noopener noreferrer"
-              >WhatsApp</a
-            >
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <a href="#contact">Start a conversation</a>
-            <a href="#pricing">See plans</a>
+          <div class="footer__links">
+            <div>
+              <h4>Studio</h4>
+              <a href="#work">Our Work</a>
+              <a href="#capabilities">What We Do</a>
+              <a href="#about">About</a>
+              <a href="retainers.html">Content Retainers</a>
+            </div>
+            <div>
+              <h4>Get in touch</h4>
+              <a href="mailto:sales@thecosmiccreator.com">Email</a>
+              <a href="https://wa.me/919611145162" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a href="tel:+919611145162">+91 96111 45162</a>
+              <a href="https://cal.com/thecosmiccreator" target="_blank" rel="noopener noreferrer"
+                >Book a call</a
+              >
+              <!-- TODO: add Instagram + LinkedIn URLs when confirmed:
+              <a href="https://instagram.com/…" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://linkedin.com/company/…" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              -->
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer__bottom">
-        <p>© 2026 The Cosmic Creator Co. All rights reserved.</p>
-        <p>Content that gets you clients.</p>
+        <div class="footer__bottom">
+          <p>© 2026 The Cosmic Creator Co.</p>
+          <p><a href="privacy.html">Privacy Policy</a></p>
+        </div>
       </div>
     </footer>
 
-    <script src="js/vendor/gsap.min.js"></script>
-    <script src="js/vendor/ScrollTrigger.min.js"></script>
-    <script src="js/vendor/lenis.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/vendor/gsap.min.js" defer></script>
+    <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="js/vendor/lenis.min.js" defer></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
